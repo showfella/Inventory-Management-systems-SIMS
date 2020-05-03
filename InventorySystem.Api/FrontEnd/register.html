@@ -1,0 +1,123 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="/FrontEnd/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/FrontEnd/assets/css/style.css">
+  <link rel="stylesheet" href="/FrontEnd/assets/css/responsive.css">
+  <link rel="stylesheet" href="/FrontEnd/assets/css/animate.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div class="login-main">
+        <div class="banner-half">
+            <h1 class="banner">Register</h1>   
+        </div>
+
+        <div class="login-half">
+            <div class="login-wrapper ">
+                <form id="reg-form">
+                    <div class="form-group mb-3">
+                      <label for="username">First Name</label>
+                      <input type="text" class="form-control" id="FirstName" aria-describedby="username">
+                    </div>
+
+                    <div class="form-group mb-3">
+                      <label for="username">Last Name</label>
+                      <input type="text" class="form-control" id="LastName" aria-describedby="username">
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                      <label for="username">Email</label>
+                      <input type="text" class="form-control" id="Email" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="form-group mb-3">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password">
+                    </div>
+
+                    <div class="form-group mb-3">
+                      <label for="username">Phone</label>
+                      <input type="text" class="form-control" id="phone" >
+                    </div>
+
+                    <div class="form-group mb-3">
+                      <label for="username">Company Name</label>
+                      <input type="text" class="form-control" id="company_name">
+                    </div>
+                    
+
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <button type="submit" class="btn btn-success bttn login-bttn">Submit</button>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn bttn login-bttn">Cancel</button>
+                        </div>                        
+                    </div>
+                </form>
+    
+            </div>
+        </div>        
+
+    </div>
+
+
+  <script src="/FrontEnd/assets/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="/FrontEnd/assets/js/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="/FrontEnd/assets/js/main.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+
+    $('#reg-form').submit(function(e){
+        e.preventDefault();
+        let data = {
+            FirstName:$('#FirstName').val(),
+            LastName:$('#LastName').val(),
+            Password:$('#password').val(),
+            Email:$('#Email').val(),
+            PhoneNumber:$('#phone').val(),
+            CompanyName:$('#company_name').val(),
+        }
+
+        $.ajax({
+// *********The URL TO CHAANGE *******************************************// 
+            // url: "https://localhost:44352/api/Authenticate/SignUpUser",
+            //*** url:"https://localhost:44352/api/Authenticate/SignUpUser", ****//
+            url: "https://inventorysystemapi20200502143054.azurewebsites.net/api/Authenticate/SignUpUser",
+            type: "POST",
+            data: JSON.stringify(data),
+            contentType: 'application/json',
+            success:function(result){
+                alert(result);
+                console.log(result);
+                location.href='/orders.html?'+data.FirstName;
+            },
+            error:function(err){
+                alert(err)
+                console.log(err);
+            }
+
+        });
+    });
+
+    })
+  </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div class="login-main">
+        <div class="banner-half">
+            <h1 class="banner">Login</h1>   
+        </div>
+
+        <div class="login-half">
+            <div class="login-wrapper ">
+                <form>
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <input type="text" class="form-control" id="username" aria-describedby="username">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <button type="submit" class="btn btn-success bttn login-bttn">Login</button>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn bttn login-bttn">Sign Up</button>
+                        </div>                        
+                    </div>
+                </form>
+    
+            </div>
+        </div>        
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      
+      $('#log-form').submit(function(e){
+          e.preventDefault();
+          let data={
+              username:$('#username').val(),
+              password:$('#password').val()
+          }
+          
+          $.ajax({
+              // *********The URL TO CHAANGE *******************************************// 
+            // url : "http://localhost:85/api/Authenticate/SignUpUser",
+            //  url: "https://localhost:44352/api/Authenticate/SignUpUser",
+              url: "https://inventorysystemapi20200502143054.azurewebsites.net/api/Authenticate/SignUpUser",
+              data:JSON.stringify(data),
+              type:'POST',
+              contentType:'application/json',
+              success:function(res){
+                  localStorage.setItem('',JSON.stringify(res.UserId));
+                  localStorage.setItem('logged',JSON.stringify(res.Email));
+                  location.href='products.html';
+              },
+              error:function(err){
+                  console.log(err);
+              }
+
+          })
+      })
+    });
+</script>
+  
+</body>
+
+</html>

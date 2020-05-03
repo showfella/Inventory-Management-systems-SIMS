@@ -1,0 +1,151 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Shoa Invent</a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" id="user"></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="pg">
+
+    <div class="sidebar">
+      <ul class="sd-menu">
+        <li class="orders"><a class="sb-link" href="products.html">Products</a></li>
+        <li class="neworder"><a class="sb-link" href="add_product.html">New Product</a></li>
+        <hr>
+        <li class="users"><a class="sb-link" href="users.html">Users</a></li>
+        <li class="newusers"><a class="sb-link" href="add_user.html">New Users</a></li>
+        <hr>
+        <li><a class="sb-link" href="index.html">Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="pg-content">
+      <div class="header">
+          <h2 onclick="toEdit()">Users</h2>
+      </div>
+
+      <div class="row">
+        <div class="tableholder">
+          <table class="table table-bordered">
+              <thead class="thead-light" >
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">Email</th>                  
+                  <th scope="col">Username</th>
+                </tr>
+              </thead>
+              <tbody id="prod-table">
+
+              </tbody>
+
+          </table>
+        </div>
+          
+      </div>
+
+    </div>
+
+  </div>
+
+    
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    
+    function toEdit(index){
+      let users = JSON.parse(localStorage.getItem('users'));
+      let user = users[index];
+      localStorage.setItem('user',JSON.stringify(user));
+      location.href="edit_user.html";
+    }
+
+    $(document).ready(function(){
+      let logged = JSON.parse(localStorage.getItem('logged'));
+      $('#user').html('welcome '+logged);
+      var superAdmin = JSON.parse(localStorage.getItem('superAdmin'));
+
+      $('#prod-table').append('<td align=center>Loading</td>');
+      $.ajax({
+            // *********The URL TO CHAANGE ***************************// 
+            // url : "http://localhost:85/api/Authenticate/SignUpUser",
+          url:"https://localhost:44352/api/BackOffice/GetAllAdmins?ManagerID="+superAdmin,
+            type:"POST",
+            contentType:'application/json',
+            success:function(result){
+              localStorage.setItem('users',JSON.stringify(result));
+
+                $('#prod-table').html(null);
+
+                $(result).each(function(index,item){  
+                  $('#prod-table').append(
+                    '<tr class="t-row"  onclick="toEdit('+index+')">'
+                    +'<th scope="row">'+item.UserID +'</th>'
+                    +'<td>'+item.FirstName +'</td>'
+                    +'<td>'+item.LastName +'</td>'
+                    +'<td>'+item.Role +'</td>'
+                    +'<td>'+item.Email +'</td>'
+                    +'<td>'+item.Username +'</td>'                    
+                    +'</tr>'
+                  )
+
+                })
+
+            },
+            error:function(err){
+                alert(err)
+                console.log(err);
+            }
+
+      });
+
+    });
+  </script>
+  
+</body>
+
+</html>

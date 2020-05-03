@@ -1,0 +1,122 @@
+﻿
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div class="login-main">
+        <div class="banner-half">
+            <h1 class="banner">Register</h1>
+        </div>
+
+        <div class="login-half">
+            <div class="login-wrapper ">
+                <form id="reg-form">
+                    <div class="form-group mb-3">
+                        <label for="username">First Name</label>
+                        <input type="text" class="form-control" id="FirstName" aria-describedby="username">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="username">Last Name</label>
+                        <input type="text" class="form-control" id="LastName" aria-describedby="username">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="username">Email</label>
+                        <input type="text" class="form-control" id="Email" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="username">Phone</label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="username">Company Name</label>
+                        <input type="text" class="form-control" id="company_name">
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <button type="submit" class="btn btn-success bttn login-bttn">Submit</button>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn bttn login-bttn">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="/assets/js/main.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+    $('#reg-form').submit(function(e){
+        e.preventDefault();
+        let data = {
+            FirstName:$('#FirstName').val(),
+            LastName:$('#LastName').val(),
+            Email:$('#Email').val(),
+            Password:$('#password').val(),
+            PhoneNumber:$('#phone').val(),
+            CompanyName:$('#company_name').val(),
+        }
+
+        $.ajax({
+            type: "POST",
+// *********The URL TO CHAANGE *******************************************//
+            url: "https://sims.ngrok.io.ngrok.io/api/Authenticate/SignUpUser",
+            contentType:   "application/json;charset=utf-8",
+            data:   JSON.stringify(data),
+            success:function(result){
+                alert(result);
+                console.log(result)
+            },
+            error:function(err){
+                alert(err)
+                console.log(err);
+            }
+
+        });
+    });
+
+    })
+    </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,169 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Shoa Invent</a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" id="user"></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="pg">
+
+    <div class="sidebar">
+      <ul class="sd-menu">
+        <li class="orders"><a class="sb-link" href="products.html">Products</a></li>
+        <li class="neworder"><a class="sb-link" href="add_product.html">New Product</a></li>
+        <hr>
+        <li class="users"><a class="sb-link" href="users.html">Users</a></li>
+        <li class="newusers"><a class="sb-link" href="add_user.html">New Users</a></li>
+        <hr>
+        <li><a class="sb-link" href="index.html">Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="pg-content">
+      <div class="header">
+          <h2>Add Product</h2>
+      </div>
+
+      <div class="container animated fadeIn faster">
+        <form class="form-holder" id="form">              
+            <div class="form-group col-md-6">
+              <label for="product_name">Product Name</label>
+              <input type="text" class="form-control" name="product_name" id="product_name" aria-describedby="full_name">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="manufacturer">Manufacturer</label>
+                <input type="text" class="form-control" name="manufacturer" id="manufacturer">
+            </div>
+            
+            <div class="form-group col-md-6">
+                <label for="cost_price">Cost Price</label>
+                <input type="text" class="form-control" name="cost_price" id="cost_price">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="selling_price">Selling Price</label>
+              <input type="text" class="form-control" name="selling_price" id="selling_price" aria-describedby="selling_price">
+            </div>
+            
+            <div class="form-group col-md-6">
+              <label for="stock">Number of Stock</label>
+              <input type="text" class="form-control" name="stock" id="stock" aria-describedby="stock">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="warehouse">Warehouse </label>
+              <input type="text" class="form-control" name="warehouse" id="warehouse">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="vendor">Vendor</label>
+              <input type="text" class="form-control" id="vendor" id="vendor" >
+            </div>
+
+            <div class="col-md-12">
+                <div class="col-md-1">
+                    <button class="btn" id="close" onclick="location.href='products.html'">Cancel</button>
+                </div>
+                <div class="col-md-1">
+                    <button type="submit" class="btn btn-success">Add</button>
+                </div>
+            </div>
+        </form>
+      </div>
+
+
+    </div>
+
+  </div>
+
+    
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      let logged = JSON.parse(localStorage.getItem('logged'));
+      $('#user').html('welcome '+logged);
+
+      $('#form').submit(function(e){
+        e.preventDefault();
+        let data = {
+            ProductName:$('#product_name').val(),
+            Manufacturer:$('#manufacturer').val(),
+            CostPrice:$('#cost_price').val(),
+            SellingPrice:$('#selling_price').val(),
+            NumberOfStock:$('#stock').val(),
+            WareHouse:$('#warehouse').val(),
+            Vendor:$('#vendor').val(),
+        }
+
+        $.ajax({
+            // *********The URL TO CHAANGE *******************************************// 
+            // url : "http://localhost:85/api/Authenticate/SignUpUser",
+           // url: "https://localhost:44352/api/Product/AddProduct",
+            url: "https://inventorysystemapi20200502143054.azurewebsites.net/api/Product/AddProduct",
+            type:"POST",
+            data:   JSON.stringify(data),
+            contentType:'application/json',
+            success:function(result){
+                location.href='products.html?'+user;
+            },
+            error:function(err){
+                alert(err)
+                console.log(err);
+            }
+
+        });
+
+      });
+
+    });
+  </script>
+  
+</body>
+
+</html>
