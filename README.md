@@ -27,8 +27,8 @@ Stock Inventory Management System is a  software application which fulfills the 
 
 ### Enity Relation Diagram ERD
 
-### UI/UX Wireframe
-![](https://github.com/showfella/Inventory-Management-systems-SIMS/blob/master/Stock%20Inventory%20Managment%20System%20WireFrame%20Draft_Page_1.png) ![](https://github.com/showfella/Inventory-Management-systems-SIMS/blob/master/Stock%20Inventory%20Managment%20System%20WireFrame%20Draft_Page_2.png)
+### UI/UX Wireframe![](https://github.com/showfella/Inventory-Management-systems-SIMS/blob/master/Stock%20Inventory%20Managment%20System%20WireFrame%20Draft_Page_1.png) 
+![](https://github.com/showfella/Inventory-Management-systems-SIMS/blob/master/Stock%20Inventory%20Managment%20System%20WireFrame%20Draft_Page_2.png)
 ### Requirement List
 
 ### Use Case Requirements
