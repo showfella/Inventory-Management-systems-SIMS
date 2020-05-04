@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/animate.css">
@@ -46,16 +46,19 @@
   <div class="pg">
 
     <div class="sidebar">
-        <ul class="sd-menu">
-          <li class="orders"><a class="sb-link" href="products.html">Products</a></li>
-          <li class="neworder"><a class="sb-link" href="add_product.html">New Product</a></li>
-          <hr>
-          <li class="users"><a class="sb-link" href="users.html">Users</a></li>
-          <li class="newusers"><a class="sb-link" href="add_user.html">New Users</a></li>
-          <hr>
-          <li><a class="sb-link" href="index.html">Logout</a></li>
-        </ul>
-      </div>
+      <ul class="sd-menu">
+        <li class="orders"><a class="sb-link" href="products.html">Products</a></li>
+        <li class="neworder"><a class="sb-link" href="add_product.html">New Product</a></li>
+        <hr>
+        <li class="users"><a class="sb-link" href="vendors.html">Vendors</a></li>
+        <li class="newusers"><a class="sb-link" href="add_vendor.html">New Vendor</a></li>
+        <hr>
+        <li class="users"><a class="sb-link" href="users.html">Users</a></li>
+        <li class="newusers"><a class="sb-link" href="add_user.html">New Users</a></li>
+        <hr>
+        <li><a class="sb-link" href="index.html">Logout</a></li>
+      </ul>
+    </div>
 
     <div class="pg-content">
       <div class="header">
@@ -85,8 +88,11 @@
             </div>
 
             <div class="form-group col-md-6">
-              <label for="email">Role </label>
-              <input type="text" class="form-control" id="role">
+              <label for="role">Role </label>
+              <select class="form-control" name="role" id="role">
+                <option selected value="User">User</option>
+                <option value="Manager">Manager</option>
+              </select>              
             </div>
 
             <div class="col-md-12">
@@ -143,12 +149,13 @@
       $('#last_name').val(values.LastName),
       $('#email').val(values.Email),
       $('#password').val(),
-      $('#role').val(values.Role),
+      $('#role').append('<option selected>'+values.Role+'</option>'),
 
       $('#form').submit(function(e){
         e.preventDefault();
         let data = {
             SuperAdminId:superAdmin,
+            MakerCheckerId:values.UserId,
             FirstName:$('#first_name').val(),
             LastName:$('#last_name').val(),
             Email:$('#email').val(),
@@ -158,9 +165,7 @@
 
         $.ajax({
             // *********The URL TO CHAANGE *******************************************// 
-            // url : "http://localhost:85/api/Authenticate/SignUpUser",
-           // url: "https://localhost:44352/api/BackOffice/UpdateUser",
-            url: "https://inventorysystemapi20200502143054.azurewebsites.net/api/BackOffice/UpdateUser",
+            url:"https://localhost:44352/api/BackOffice/UpdateUser",
             type:"POST",
             data:   JSON.stringify(data),
             contentType:'application/json',
@@ -168,7 +173,7 @@
                 location.href='users.html?'+user;
             },
             error:function(err){
-                alert(err)
+                alert('delete failed, sign in as admin to delete')
                 console.log(err);
             }
 
@@ -183,10 +188,7 @@
         }
         $.ajax({
           // *********The URL TO CHAANGE *******************************************// 
-          // url : "http://localhost:85/api/Authenticate/SignUpUser",
-          //  url: "https://localhost:44352/api/BackOffice/DeleteUser",
-            url: "https://inventorysystemapi20200502143054.azurewebsites.net/api/BackOffice/DeleteUser",
-
+          url:"https://localhost:44352/api/BackOffice/DeleteUser",
           type:'POST',
           data:JSON.stringify(data),
           contentType:'application/json',

@@ -1,0 +1,85 @@
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\InventorySystem.Core.dll.config
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\InventorySystem.Core.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\InventorySystem.Core.pdb
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\EntityFramework.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Owin.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\EntityFramework.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\obj\Debug\InventorySystem.Core.csproj.CopyComplete
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\obj\Debug\InventorySystem.Core.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\obj\Debug\InventorySystem.Core.pdb
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\InventorySystem.Core.dll.config
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\InventorySystem.Core.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\InventorySystem.Core.pdb
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\EntityFramework.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Owin.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\EntityFramework.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\obj\Debug\InventorySystem.Core.csprojAssemblyReference.cache
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\obj\Debug\InventorySystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\obj\Debug\InventorySystem.Core.csproj.CopyComplete
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\obj\Debug\InventorySystem.Core.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Core\obj\Debug\InventorySystem.Core.pdb
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Core\obj\Debug\InventorySystem.Core.csprojAssemblyReference.cache
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\InventorySystem.Core.dll.config
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\InventorySystem.Core.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\InventorySystem.Core.pdb
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\EntityFramework.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.Owin.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Owin.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\EntityFramework.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.Owin.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\obj\Debug\InventorySystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\obj\Debug\InventorySystem.Core.csproj.CopyComplete
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\obj\Debug\InventorySystem.Core.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Core\obj\Debug\InventorySystem.Core.pdb

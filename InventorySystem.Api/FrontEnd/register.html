@@ -96,12 +96,11 @@
 
         $.ajax({
 // *********The URL TO CHAANGE *******************************************// 
-            // url: "https://localhost:44352/api/Authenticate/SignUpUser",
-            //*** url:"https://localhost:44352/api/Authenticate/SignUpUser", ****//
-            url: "https://inventorysystemapi20200502143054.azurewebsites.net/api/Authenticate/SignUpUser",
-            type: "POST",
-            data: JSON.stringify(data),
-            contentType: 'application/json',
+            url : "https://localhost:44352/api/Authenticate/SignUpUser",
+           //*** url:"/api/Authenticate/SignUpUser", ****//
+            type:"POST",
+            data:   JSON.stringify(data),
+            contentType:'application/json',
             success:function(result){
                 alert(result);
                 console.log(result);

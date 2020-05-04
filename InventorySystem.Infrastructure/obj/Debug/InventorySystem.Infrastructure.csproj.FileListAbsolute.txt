@@ -1,0 +1,54 @@
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Infrastructure.dll.config
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Infrastructure.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Infrastructure.pdb
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\EntityFramework.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Core.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\Microsoft.Owin.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\Owin.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Core.pdb
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Core.dll.config
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\EntityFramework.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\Microsoft.Owin.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.csprojAssemblyReference.cache
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.csproj.CopyComplete
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.pdb
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.csprojAssemblyReference.cache
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.pdb
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.Migrations.InitailCreate.resources
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.csproj.GenerateResource.cache
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Infrastructure.dll.config
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Infrastructure.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Infrastructure.pdb
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\EntityFramework.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Core.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\Microsoft.Owin.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\Owin.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Core.pdb
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\InventorySystem.Core.dll.config
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\EntityFramework.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\Microsoft.Owin.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.csprojAssemblyReference.cache
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.csproj.CopyComplete
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.pdb
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.Migrations.IntialCreate.resources
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Infrastructure\obj\Debug\InventorySystem.Infrastructure.csproj.GenerateResource.cache

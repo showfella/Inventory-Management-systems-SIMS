@@ -51,6 +51,9 @@
         <li class="orders"><a class="sb-link" href="products.html">Products</a></li>
         <li class="neworder"><a class="sb-link" href="add_product.html">New Product</a></li>
         <hr>
+        <li class="users"><a class="sb-link" href="vendors.html">Vendors</a></li>
+        <li class="newusers"><a class="sb-link" href="add_vendor.html">New Vendor</a></li>
+        <hr>
         <li class="users"><a class="sb-link" href="users.html">Users</a></li>
         <li class="newusers"><a class="sb-link" href="add_user.html">New Users</a></li>
         <hr>
@@ -92,12 +95,20 @@
 
             <div class="form-group col-md-6">
               <label for="warehouse">Warehouse </label>
-              <input type="text" class="form-control" name="warehouse" id="warehouse">
+              <select class="form-control" name="warehouse" id="warehouse">
+                <option selected>select</option>
+                <option value="warehouse 1">Warehouse 1</option>
+                <option value="warehouse 2">Warehouse 2</option>
+                <option value="warehouse 3">Warehouse 3</option>
+                <option value="warehouse 4">Warehouse 4</option>
+              </select>
             </div>
 
             <div class="form-group col-md-6">
               <label for="vendor">Vendor</label>
-              <input type="text" class="form-control" id="vendor" id="vendor" >
+              <select  class="form-control" id="vendor" id="vendor">
+                <option selected>select</option>
+              </select>
             </div>
 
             <div class="col-md-12">
@@ -116,8 +127,6 @@
 
   </div>
 
-    
-
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="assets/js/jquery-3.4.1.min.js"><\/script>')</script>
@@ -128,6 +137,26 @@
 
       let logged = JSON.parse(localStorage.getItem('logged'));
       $('#user').html('welcome '+logged);
+
+      $.ajax({
+            // *********The URL TO CHAANGE *******************************************// 
+            // url:"http://sims.ngrok.io.ngrok.io/api/Vendor/GetAllVendors",
+            url : "https://localhost:44352/api/Vendor/GetAllVendors",
+            type:"Get",
+            contentType:'application/json',
+            success:function(result){
+              console.log(result)
+                $(result).each(function(index,item){
+                  $('#vendor').append(
+                    '<option value="'+item.VendorName+'">'+item.VendorName+'</option>'
+                  )
+                });
+            },
+            error:function(err){
+                console.log(err);
+            }
+
+        });
 
       $('#form').submit(function(e){
         e.preventDefault();
@@ -144,13 +173,12 @@
         $.ajax({
             // *********The URL TO CHAANGE *******************************************// 
             // url : "http://localhost:85/api/Authenticate/SignUpUser",
-           // url: "https://localhost:44352/api/Product/AddProduct",
-            url: "https://inventorysystemapi20200502143054.azurewebsites.net/api/Product/AddProduct",
+            url:"https://localhost:44352/api/Product/AddProduct",
             type:"POST",
             data:   JSON.stringify(data),
             contentType:'application/json',
             success:function(result){
-                location.href='products.html?'+user;
+                location.href='products.html';
             },
             error:function(err){
                 alert(err)

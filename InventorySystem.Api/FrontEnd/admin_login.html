@@ -43,7 +43,7 @@
                             <button type="submit" class="btn btn-success bttn login-bttn">Login</button>
                         </div>
                         <div class="col-md-12">
-                            <button class="btn bttn login-bttn">Sign Up</button>
+                            <!-- <button class="btn bttn login-bttn">Sign Up</button> -->
                         </div>                        
                     </div>
                 </form>
@@ -74,9 +74,8 @@
             
             $.ajax({
                 // *********The URL TO CHAANGE *******************************************// 
-                // url : "http://localhost:85/api/Authenticate/SignUpUser",
-               // url: "https://localhost:44352/api/BackOffice/AdminLogin",
-                url: "https://inventorysystemapi20200502143054.azurewebsites.net/api/BackOffice/AdminLogin",
+                // url : "http://localhost:85/api/BackOffice/AdminLogin",
+                url:"https://localhost:44352/api/BackOffice/AdminLogin",
                 data:JSON.stringify(data),
                 type:'POST',
                 contentType:'application/json',

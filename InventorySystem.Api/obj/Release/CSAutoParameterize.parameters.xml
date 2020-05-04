@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="InventorySystemString-Web.config Connection String" description="InventorySystemString Connection String used in web.config by the application to access the database." defaultValue="Data Source = OFFICE; Initial Catalog = InventoryDb; persist security info=True; Integrated Security = True;MultipleActiveResultSets=True;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\SA\ Konsult\ llc\\Source\\Repos\\InventorySystem\\InventorySystem\.Api\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='InventorySystemString']/@connectionString" />
+  </parameter>
+</parameters>

@@ -16,7 +16,7 @@ namespace InventorySystem.Infrastructure.Context
         {
             Configuration.ProxyCreationEnabled = false;
             Configuration.LazyLoadingEnabled = false;
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<AppDbContext, Configuration>());
+           Database.SetInitializer(new MigrateDatabaseToLatestVersion<AppDbContext, Configuration>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

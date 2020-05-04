@@ -1,4 +1,4 @@
-namespace InventorySystem.Infrastructure.Migrations
+﻿namespace InventorySystem.Infrastructure.Migrations
 {
     using InventorySystem.Core.Entities;
     using Microsoft.AspNet.Identity;
@@ -29,6 +29,15 @@ namespace InventorySystem.Infrastructure.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
 
+            if (!context.Roles.Any(r => r.Name == "Customer"))
+            {
+                var store = new RoleStore<ApplicationRole>(context);
+                var manager = new RoleManager<ApplicationRole>(store);
+                var role = new ApplicationRole { Name = "Customer", Description = "The Customer Role", Status = Core.Enums.Status.Active };
+
+                manager.Create(role);
+            }
+
             if (!context.Roles.Any(r => r.Name == "Manager"))
             {
                 var store = new RoleStore<ApplicationRole>(context);
@@ -58,7 +67,7 @@ namespace InventorySystem.Infrastructure.Migrations
                     status = Core.Enums.Status.Active.ToString(),
                     RegistrationDate = DateTime.Now,
                     CompanyName = "SIMS"
-        
+
                 };
                 manager.Create(user, "manager@123");
                 manager.AddToRole(user.Id, "Manager");

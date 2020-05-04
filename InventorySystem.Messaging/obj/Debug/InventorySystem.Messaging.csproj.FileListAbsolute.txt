@@ -1,0 +1,69 @@
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\InventorySystem.Messaging.dll.config
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\InventorySystem.Messaging.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\InventorySystem.Messaging.pdb
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\SendGrid.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\Twilio.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\SendGrid.pdb
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\SendGrid.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\bin\Debug\Twilio.xml
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.csproj.CopyComplete
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.dll
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.pdb
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\InventorySystem.Messaging.dll.config
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\InventorySystem.Messaging.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\InventorySystem.Messaging.pdb
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\Newtonsoft.Json.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\SendGrid.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\Twilio.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\Newtonsoft.Json.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\SendGrid.pdb
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\SendGrid.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\bin\Debug\Twilio.xml
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.csprojAssemblyReference.cache
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.csproj.CopyComplete
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.dll
+C:\Users\David\Desktop\Personal\InventorySystem\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.pdb
+C:\Users\DELL PRECISION 5520\source\repos\InventorySystem\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.csprojAssemblyReference.cache
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\InventorySystem.Messaging.dll.config
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\InventorySystem.Messaging.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\InventorySystem.Messaging.pdb
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\SendGrid.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\Twilio.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\SendGrid.pdb
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\SendGrid.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\Twilio.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.csprojAssemblyReference.cache
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.csproj.CoreCompileInputs.cache
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.csproj.CopyComplete
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\obj\Debug\InventorySystem.Messaging.pdb
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\EntityFramework.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\EntityFramework.xml
+C:\Users\SA Konsult llc\source\repos\Inventotry Management systems SIMS\InventorySystem.Messaging\bin\Debug\EntityFramework.SqlServer.xml

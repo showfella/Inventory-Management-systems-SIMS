@@ -51,6 +51,9 @@
         <li class="orders"><a class="sb-link" href="products.html">Products</a></li>
         <li class="neworder"><a class="sb-link" href="add_product.html">New Product</a></li>
         <hr>
+        <li class="users"><a class="sb-link" href="vendors.html">Vendors</a></li>
+        <li class="newusers"><a class="sb-link" href="add_vendor.html">New Vendor</a></li>
+        <hr>
         <li class="users"><a class="sb-link" href="users.html">Users</a></li>
         <li class="newusers"><a class="sb-link" href="add_user.html">New Users</a></li>
         <hr>
@@ -113,7 +116,7 @@
       $.ajax({
             // *********The URL TO CHAANGE ***************************// 
             // url : "http://localhost:85/api/Authenticate/SignUpUser",
-          url:"https://localhost:44352/api/BackOffice/GetAllAdmins?ManagerID="+superAdmin,
+            url:"https://localhost:44352/BackOffice/GetAllAdmins?ManagerID="+superAdmin,
             type:"POST",
             contentType:'application/json',
             success:function(result){
@@ -124,7 +127,7 @@
                 $(result).each(function(index,item){  
                   $('#prod-table').append(
                     '<tr class="t-row"  onclick="toEdit('+index+')">'
-                    +'<th scope="row">'+item.UserID +'</th>'
+                    +'<th scope="row">'+item.UserId +'</th>'
                     +'<td>'+item.FirstName +'</td>'
                     +'<td>'+item.LastName +'</td>'
                     +'<td>'+item.Role +'</td>'

@@ -51,6 +51,9 @@
         <li class="orders"><a class="sb-link" href="products.html">Products</a></li>
         <li class="neworder"><a class="sb-link" href="add_product.html">New Product</a></li>
         <hr>
+        <li class="users"><a class="sb-link" href="vendors.html">Vendors</a></li>
+        <li class="newusers"><a class="sb-link" href="add_vendor.html">New Vendor</a></li>
+        <hr>
         <li class="users"><a class="sb-link" href="users.html">Users</a></li>
         <li class="newusers"><a class="sb-link" href="add_user.html">New Users</a></li>
         <hr>
@@ -60,7 +63,7 @@
 
     <div class="pg-content">
       <div class="header">
-          <h2 onclick="toEdit()">Products</h2>
+          <h2 >Products</h2>
       </div>
 
       <div class="row">
@@ -81,13 +84,6 @@
               </thead>
               <tbody id="prod-table">
                
-                <!-- <tr class="t-row" onclick="">
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                </tr> -->
 
               </tbody>
 
@@ -124,13 +120,11 @@
       $('#prod-table').append('<td align=center>Loading</td>');
       $.ajax({
             // *********The URL TO CHAANGE ***************************// 
-            // url : "http://localhost:85/api/Authenticate/SignUpUser",  //
-          //url: "https://localhost:44352/api/Product/GetAllProduct", //
-          url: "https://inventorysystemapi20200502143054.azurewebsites.net/api/Product/GetAllProduct",
+            // url : "http://localhost:85/api/Authenticate/SignUpUser",
+            url:"https://localhost:44352/api/Product/GetAllProduct",
             type:"Get",
             contentType:'application/json',
             success:function(result){
-              console.log(result);
               localStorage.setItem('products',JSON.stringify(result));
 
                 $('#prod-table').html(null);
@@ -160,13 +154,7 @@
 
       });
 
-      $('#newOrder').click(function(){
-        $('#add-modal').addClass('show');
-      })
       
-      $('#closeAdd').click(function(){
-        $('#add-modal').removeClass('show');
-      })
     });
   </script>
   

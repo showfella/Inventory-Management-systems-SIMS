@@ -50,6 +50,9 @@
         <li class="orders"><a class="sb-link" href="products.html">Products</a></li>
         <li class="neworder"><a class="sb-link" href="add_product.html">New Product</a></li>
         <hr>
+        <li class="users"><a class="sb-link" href="vendors.html">Vendors</a></li>
+        <li class="newusers"><a class="sb-link" href="add_vendor.html">New Vendor</a></li>
+        <hr>
         <li class="users"><a class="sb-link" href="users.html">Users</a></li>
         <li class="newusers"><a class="sb-link" href="add_user.html">New Users</a></li>
         <hr>
@@ -85,8 +88,11 @@
             </div>
 
             <div class="form-group col-md-6">
-              <label for="email">Role </label>
-              <input type="text" class="form-control" id="role">
+              <label for="role">Role </label>
+              <select class="form-control" name="role" id="role">
+                <option selected value="User">User</option>
+                <option value="Manager">Manager</option>
+              </select>              
             </div>
 
             <div class="col-md-12">
@@ -132,9 +138,8 @@
 
         $.ajax({
             // *********The URL TO CHAANGE *******************************************// 
-            // url : "http://localhost:85/api/Authenticate/SignUpUser",
-            //url: "https://localhost:44352/api/BackOffice/CreateUser",
-            url: "https://inventorysystemapi20200502143054.azurewebsites.net/api/BackOffice/CreateUser",
+            // url : "http://localhost:85/api/BackOffice/CreateUser",
+            url: "https://localhost:44352/api/BackOffice/CreateUser",
             type:"POST",
             data:   JSON.stringify(data),
             contentType:'application/json',

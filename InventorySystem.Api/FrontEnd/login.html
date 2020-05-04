@@ -27,9 +27,9 @@
 
         <div class="login-half">
             <div class="login-wrapper ">
-                <form>
+                <form id="log-form">
                     <div class="form-group">
-                      <label for="username">Username</label>
+                      <label for="username">Email</label>
                       <input type="text" class="form-control" id="username" aria-describedby="username">
                     </div>
                     <br>
@@ -43,7 +43,7 @@
                             <button type="submit" class="btn btn-success bttn login-bttn">Login</button>
                         </div>
                         <div class="col-md-12">
-                            <button class="btn bttn login-bttn">Sign Up</button>
+                            <!-- <button class="btn bttn login-bttn">Sign Up</button> -->
                         </div>                        
                     </div>
                 </form>
@@ -68,21 +68,21 @@
       $('#log-form').submit(function(e){
           e.preventDefault();
           let data={
-              username:$('#username').val(),
-              password:$('#password').val()
+              Email:$('#username').val(),
+              Password:$('#password').val()
           }
           
           $.ajax({
               // *********The URL TO CHAANGE *******************************************// 
             // url : "http://localhost:85/api/Authenticate/SignUpUser",
-            //  url: "https://localhost:44352/api/Authenticate/SignUpUser",
-              url: "https://inventorysystemapi20200502143054.azurewebsites.net/api/Authenticate/SignUpUser",
+              url:"https://localhost:44352/api/Authenticate/SignInUser",
               data:JSON.stringify(data),
               type:'POST',
               contentType:'application/json',
               success:function(res){
-                  localStorage.setItem('',JSON.stringify(res.UserId));
+                  localStorage.setItem('id',JSON.stringify(res.UserId));
                   localStorage.setItem('logged',JSON.stringify(res.Email));
+                  localStorage.setItem('superAdmin','');
                   location.href='products.html';
               },
               error:function(err){

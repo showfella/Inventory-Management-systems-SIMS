@@ -66,7 +66,7 @@ namespace InventorySystem.Api.Controllers
                     applicant.EmailConfirmed = true;
                     Trace.TraceInformation(applicant.UserName + "" + applicant.Email);
                     //add user to a User role
-                    _UserManager.AddToRole(applicant.Id, "User");
+                    _UserManager.AddToRole(applicant.Id, "Customer");
                     var result = _UserManager.Update(applicant);
 
                     
@@ -118,7 +118,30 @@ namespace InventorySystem.Api.Controllers
             }
         }
 
-       
+        [HttpGet]
+        [Route("api/Authenticate/ResendEmailVerificationLink")]
+        public IHttpActionResult ResendEmailVerificationLink(string userId)
+        {
+            try
+            {
+                AppDbContext db = new AppDbContext();
+                var user = db.Users.FirstOrDefault(x => x.Id == userId);
+                if (user != null)
+                {
+                    new MessageController().SendActivationMail(user.Email, "Email Verification", user.Id);
+                    Trace.TraceInformation(user.Email, " ", userId);
+                    return Ok(true);
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
+        }
 
         [Route("api/Authenticate/SignInUser")]
         [HttpPost]
@@ -149,7 +172,7 @@ namespace InventorySystem.Api.Controllers
                     IList<string> Roles = _UserManager.GetRoles(user.Id);
                     foreach (var role in Roles)
                     {
-                        if (role == "User" || role == "Manager")
+                        if (role == "Customer")
                         {
                             resp.Role = role;
                         }
@@ -176,7 +199,30 @@ namespace InventorySystem.Api.Controllers
         /// this api is called when customer forges his password
         /// </summary>
         [Route("api/Authenticate/ForgottenPassword")]
-        
+        [HttpPost]
+        public async Task<IHttpActionResult> ForgottenPassword(ForgottenPasswordModel model)
+        {
+            try
+            {
+                var user = await _UserManager.FindByNameAsync(model.Email);
+
+                if (user != null)
+                {
+                    new AuthenticationController().ResendPasswordLink(user.Id);
+                    return Ok(user.Id);
+                }
+                else
+                {
+                    return BadRequest("User does not exist, please Sign up");
+                }
+            }
+
+            catch (Exception msg)
+            {
+                return InternalServerError(msg.InnerException);
+            }
+
+        }
 
         [Route("api/Authenticate/ValidatePassword")]
         [HttpPost]
@@ -213,7 +259,32 @@ namespace InventorySystem.Api.Controllers
         /// This method is to re-send Password Verification Link to Customer if customer dont get the password initially
         /// </summary>
         /// <param name="userId"></param>
-        
+        /// <returns></returns>
+        [HttpPost]
+        [Route("api/Authenticate/ResendPasswordLink")]
+        public IHttpActionResult ResendPasswordLink(string userId)
+        {
+            try
+            {
+                AppDbContext db = new AppDbContext();
+                var user = db.Users.FirstOrDefault(x => x.Id == userId);
+                if (user != null)
+                {
+                    new MessageController().SendPasswordLink(user.Email, "Password Verification", user.Id);
+                    Trace.TraceInformation(user.Email, " ", userId);
+                    return Ok(true);
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
+        }
+
         [HttpPost]
         [Route("api/BackOffice/AdminLogin")]
         public async Task<IHttpActionResult> Login(AdminLoginModel model)
@@ -294,24 +365,32 @@ namespace InventorySystem.Api.Controllers
                     userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(db));
                     IdentityRole theRole = null;
                     var theUserRoles = userManager.GetRoles(user.Id);
-                    if (theUserRoles == null || theUserRoles.Count == 0)
+                    foreach (var role in theUserRoles)
                     {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        theRole = roleManager.FindByName(theUserRoles.FirstOrDefault());
-
-                        var usermodel = new LoginResponseModel()
+                        if ( (role == "Manager") || (role == "User") )
                         {
-                            Fullname = user.Name,
-                            Email = user.Email,
-                            PhoneNo = user.PhoneNumber,
-                            Role = theRole.Name,
-                            UserId = user.Id
-                        };
-                        return Ok(usermodel);
+                            Trace.TraceInformation(role);
+                            theRole = roleManager.FindByName(theUserRoles.FirstOrDefault());
+
+                            var usermodel = new LoginResponseModel()
+                            {
+                                Fullname = user.Name,
+                                Email = user.Email,
+                                PhoneNo = user.PhoneNumber,
+                                Role = theRole.Name,
+                                UserId = user.Id
+                            };
+                            return Ok(usermodel);
+                        }
+                        else
+                        {
+                            return NotFound();
+                        }
+
                     }
+
+                    return BadRequest();
+
                 }
             }
             else
@@ -399,8 +478,8 @@ namespace InventorySystem.Api.Controllers
                 if (makerOrChecker != null)
                 {
                     var roleObj = _UserManager.GetRoles(makerOrChecker.Id);
-                    var makeCheckerRole = roleObj.FirstOrDefault(x => x == "User" || x == "Manager");
-                    if (makeCheckerRole == "User" || makeCheckerRole == "Manager")
+                    var makeCheckerRole = roleObj.FirstOrDefault(x => x == "User");
+                    if (makeCheckerRole == "User")
                     {
                         //delete maker checker 
                         db.Users.Remove(makerOrChecker);
