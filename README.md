@@ -14,6 +14,8 @@
 
 * [SQL Script]() 
 
+* [Database Diagram]()
+
 * [Prototype]()
 
 * [Sprint Review]()
