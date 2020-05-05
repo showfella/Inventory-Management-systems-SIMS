@@ -2,40 +2,44 @@
 
 ### Table Of Contents
 
-[1] User Stories
+[1] [User Stories]
 
-[2] User Case Diagram
+[2] [User Case Diagram]
 
-[3] Enity Relation Diagram ERD
+[3] [Enity Relation Diagram ERD]
 
-[4]  UI/UX Wireframe
+[4] [UI/UX Wireframe]
 
-[5] Requirement List
+[5] [Requirement List]
 
-[6] Use Case Requirements
+[6] [Use Case Requirements]
 
 [7] SQL Script 
 
 [8] Prototype
 
+[9] Sprint Review
+
 ### SIMS Concept
 Stock Inventory Management System is a  software application which fulfills the requirement of a typical Stock Analysis in various Organizations. It provides the interface to users to manage the daily transactions as well as historical data. Also provides the management reports like monthly inwards, monthly deliveries and monthly returns. This application maintains the centralized database so that any changes done at a location reflects immediately. This is an online tool so more than one user can login into system and use the tool simultaneously. The aim of this application is to reduce the manual effort needed to manage transactions and historical data used in various SIMS. Also this application provides an interface to users to view the details like the daily Stock Statements .
 
-### User Stories 
+[ ] User Stories 
 
-### User Case Diagram
+[2]### User Case Diagram
 
-### Enity Relation Diagram ERD <img src="Stock Inventory Managment System ERD.png">
+[2]### Enity Relation Diagram ERD <img src="Stock Inventory Managment System ERD.png">
 
-### UI/UX Wireframe![](https://github.com/showfella/Inventory-Management-systems-SIMS/blob/master/Stock%20Inventory%20Managment%20System%20WireFrame%20Draft_Page_1.png) 
+[2]### UI/UX Wireframe![](https://github.com/showfella/Inventory-Management-systems-SIMS/blob/master/Stock%20Inventory%20Managment%20System%20WireFrame%20Draft_Page_1.png) 
 ![](https://github.com/showfella/Inventory-Management-systems-SIMS/blob/master/Stock%20Inventory%20Managment%20System%20WireFrame%20Draft_Page_2.png)
-### [Requirement List](https://github.com/showfella/Inventory-Management-systems-SIMS/blob/master/Stock%20Inventory%20Managment%20System%20%20Software%20Requirement%20Specification%20.pdf)
+[2]### [Requirement List](https://github.com/showfella/Inventory-Management-systems-SIMS/blob/master/Stock%20Inventory%20Managment%20System%20%20Software%20Requirement%20Specification%20.pdf)
 
-### Use Case Requirements
+[2]### Use Case Requirements
 
-### SQL Script Draft
+[2]### SQL Script Draft
 
-### Prototype
+[2]### Prototype
+
+[2]
 
 
 
