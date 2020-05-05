@@ -20,10 +20,10 @@
 
 [9] Sprint Review
 
-### SIMS Concept
+### Stock inventory Mannagment Systemm SIMS 
 Stock Inventory Management System is a  software application which fulfills the requirement of a typical Stock Analysis in various Organizations. It provides the interface to users to manage the daily transactions as well as historical data. Also provides the management reports like monthly inwards, monthly deliveries and monthly returns. This application maintains the centralized database so that any changes done at a location reflects immediately. This is an online tool so more than one user can login into system and use the tool simultaneously. The aim of this application is to reduce the manual effort needed to manage transactions and historical data used in various SIMS. Also this application provides an interface to users to view the details like the daily Stock Statements .
 
-### User Stories 
+
 
 ### User Case Diagram![](https://github.com/showfella/Inventory-Management-systems-SIMS/blob/master/Stock%20Inventory%20Managment%20System%20%20Use%20Case%20Diagram.png)
 
