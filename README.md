@@ -25,7 +25,7 @@ Stock Inventory Management System is a  software application which fulfills the 
 
 ### User Stories 
 
-### User Case Diagram
+### User Case Diagram![](https://github.com/showfella/Inventory-Management-systems-SIMS/blob/master/Stock%20Inventory%20Managment%20System%20%20Use%20Case%20Diagram.png)
 
 ### Enity Relation Diagram ERD <img src="Stock Inventory Managment System ERD.png">
 
