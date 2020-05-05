@@ -2,17 +2,15 @@
 
 ### Table Of Contents
 
-[1] [User Stories]
+[2] User Case Diagram
 
-[2] [User Case Diagram]
+[3] Enity Relation Diagram ERD
 
-[3] [Enity Relation Diagram ERD]
+[4] UI/UX Wireframe
 
-[4] [UI/UX Wireframe]
+[5] Requirement List
 
-[5] [Requirement List]
-
-[6] [Use Case Requirements]
+[6] Use Case Requirements
 
 [7] SQL Script 
 
