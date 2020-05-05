@@ -2,7 +2,7 @@
 
 ### Table Of Contents
 
-* [User Case Diagram]()
+* [User Case Diagram](https://github.com/showfella/Inventory-Management-systems-SIMS#user-case-diagram)
 
 * [Enity Relation Diagram ERD]()
 
