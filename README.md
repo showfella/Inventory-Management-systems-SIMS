@@ -12,7 +12,7 @@
 
 * [Use Case Requirements]()
 
-* [SQL Script]() 
+* [SQL Script Draft]() 
 
 * [Database Diagram]()
 
@@ -36,6 +36,8 @@ Stock Inventory Management System is a  software application which fulfills the 
 ### Use Case Requirements
 
 ### SQL Script Draft
+
+### Database Diagram
 
 ### Prototype
 
